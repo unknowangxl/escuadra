@@ -7,6 +7,7 @@ desktop.ini
 .env
 .env.local
 .env.*.local
+*.local
 
 # Logs
 *.log
@@ -16,19 +17,22 @@ npm-debug.log*
 # Dependencias
 node_modules/
 vendor/
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+*.py,cover
+*.py,coverage
 
 # Build / compilación
 dist/
 build/
 out/
 target/
-*.o
-*.exe
-*.dll
-*.so
+*.egg-info/
+.eggs/
 
 # IDEs
 .vscode/
@@ -45,3 +49,40 @@ htmlcov/
 *.pem
 *.key
 *.cert
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Testing / coverage
+coverage.*
+.coverage.*
+.pytest_cache/
+
+# Type checkers / tooling
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Build general / binarios
+*.o
+*.exe
+*.dll
+*.so
+
+# Datos sensibles
+*.pem
+*.key
+*.cert
+id_rsa
+id_rsa.pub
+
+# Temporales / backups
+*.tmp
+*.temp
+*.bak
