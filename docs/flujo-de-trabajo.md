@@ -139,16 +139,15 @@ Cuando la rama ya está subida a GitHub, se debe abrir un **Pull Request** para 
 
 1. Entrar al repositorio en GitHub.
 2. Hacer clic en **Compare & pull request**.
-3. Verificar que la rama de origen sea:
+3. Verificar que la rama destino sea `dev`.
+4. Verificar que la rama de origen sea:
 
 ```text
 docs/flujo-de-trabajo
 ```
 
-4. Verificar que la rama destino sea `dev`.
-5. Escribir un título claro para el Pull Request.
-6. Completar la descripción del Pull Request.
-7. Hacer clic en **Create pull request**.
+5. Completar la descripción del Pull Request.
+6. Hacer clic en **Create pull request**.
 
 ![Captura del Pull Request](img/04-pull-request.png)
 
