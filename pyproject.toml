@@ -1,10 +1,14 @@
 [build-system]
 requires = ["setuptools>=61.0"]
+chore/ruff-linter-config
 build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
+ dev
 
 [project]
 name = "escuadra"
 version = "0.1.0"
+chore/ruff-linter-config
 description = "Herramientas de cálculo de ingeniería civil y eléctrica"
 requires-python = ">=3.10"
 
@@ -20,3 +24,8 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "W"]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+ dev
