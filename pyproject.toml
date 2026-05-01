@@ -1,12 +1,23 @@
 [build-system]
 requires = ["setuptools>=61.0"]
+feat/cli-argparse-base
 build-backend = "setuptools.backends.legacy:build"
+
+build-backend = "setuptools.build_meta"
+dev
 
 [project]
 name = "escuadra"
 version = "0.1.0"
+feat/cli-argparse-base
 description = "Herramientas de cálculo de ingeniería civil y eléctrica"
 requires-python = ">=3.10"
 
 [project.scripts]
 escuadra = "escuadra.cli:main"
+
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+dev
