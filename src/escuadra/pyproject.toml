@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "escuadra"
+version = "0.1.0"
+description = "Herramientas de cálculo de ingeniería civil y eléctrica"
+requires-python = ">=3.10"
+
+[project.scripts]
+escuadra = "escuadra.cli:main"
